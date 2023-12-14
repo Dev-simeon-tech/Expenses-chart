@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="flex justify-center align-center">
+    <div class="expenses-chart">
+      <div class="expenses-chart__header flex space-between">
+        <div>
+          <h3>My balance</h3>
+          <h1 class="expenses-chart__balance">$921.48</h1>
+        </div>
+        <img src="images/logo.svg" alt="">
+      </div>
+
+      <div class="expenses-chart__content">
+        <h2>Spending - Last 7 days</h2>
+        <div class="bar-chart__table">
+          <ul class="chart-container flex align-center justify-center">
+            <li class="chart flex align-center">
+              <span class="spending-price amount-1"></span>
+              <div class="bar "></div>
+              <p>mon</p>
+            </li>
+            <li class="chart flex align-center">
+              <span class="spending-price amount-2"></span>
+              <div class="bar"></div>
+              <p>tue</p>
+            </li>
+            <li class="chart flex align-center">
+              <span class="spending-price amount-3"></span>
+              <div class="bar"></div>
+              <p>wed</p>
+            </li>
+            <li class="chart flex align-center">
+              <span class="spending-price amount-4"></span>
+              <div class="bar"></div>
+              <p>thu</p>
+            </li>
+            <li class="chart flex align-center">
+              <span class="spending-price amount-5"></span>
+              <div class="bar"></div>
+              <p>fri</p>
+            </li>
+            <li class="chart flex align-center">
+              <span class="spending-price amount-6"></span>
+              <div class="bar"></div>
+              <p>sat</p>
+            </li>
+            <li class="chart flex align-center">
+              <span class="spending-price amount-7"></span>
+              <div class="bar"></div>
+              <p>sun</p>
+            </li>
+          </ul>
+
+        </div>
+        <div class="expenses-chart__footer flex space-between">
+          <div>
+            <h3>Total this month</h3>
+            <h2 class="expenses-total">$478.33</h2>
+          </div>
+          <div>
+            <p>+2.4%</p>
+            <h3>from last month</h3>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
